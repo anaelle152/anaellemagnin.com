@@ -1,94 +1,107 @@
-        body {
-            font-family: 'poppins', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #212529;
-        }
-        header {
-            display: flex;
-            background-color: #415a77;
-            color: #fff;
-            padding: 20px 0;
-            justify-content: center;
-            align-items:center;
-            flex-direction:column;
-            width: 100%;
-            height: 30%;
-            margin: 0em 10em 0em 0em;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            background-color: #1b263b;
-            text-align: center;
-        }
-        .textnone {
-          text-decoration: none;
-        }
-        a {
-            color: #fff;
-            display: inline-block;
-            padding: 15px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #495057;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            overflow: hidden;
-        }
-        #showcase {
-            background: url('https://source.unsplash.com/1600x900/?architecture') no-repeat center center/cover;
-            color: #000;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        #showcase h2 {
-            margin: 20px 0;
-            font-size: 2.5em;
-        }
-        #showcase p {
-            font-size: 1.2em;
-        }
-        section {
-            background-color: #00000;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-      	.textalign {
-      		text-align: center;"
-      	}
-        section h2 {
-            margin-top: 0;
-        }
-        body {
-            position: relative;
-          }
-          footer {
-              background: linear-gradient(0.25turn, #e66465, #9198e5);
-              color: #fff;
-              text-align: center;
-              width: 100%;
-              padding: 10px 0;
-              margin-top: 20px;
-      /*  footer {
-	          background: linear-gradient(0.25turn,#e66465, #9198e5);
-            color: #fff;
-            text-align: center;
-            width: 100%;
-            padding: 10px 0;
-            margin-top: 20px;
-            position: absolute;
-            bottom: 0;
-            -moz-box-sizing: border-box; box-sizing: border-box; //
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-        }
+body {
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+header {
+    display: flex;
+    background-color: #415a77;
+    color: #fff;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+    margin: 0em 10em 0em 0em;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #1b263b;
+    text-align: center;
+}
+
+.textnone {
+    text-decoration: none;
+
+}
+
+a {
+  color: #fff;
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;color: #fff;
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #495057;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#showcase {
+    background: url('https://source.unsplash.com/1600x900/?architecture') no-repeat center center/cover;
+    color: #000;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#showcase h2 {
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+#showcase p {
+    font-size: 1.2em;
+}
+
+section {
+    background-color: #00000;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.textalign {
+    text-align: center;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+footer {
+    background: linear-gradient(0.25turn, #e66465, #9198e5);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    -moz-box-sizing: border-box; box-sizing: border-box;
+}
+p a {
+    color: #000000;
+    text-decoration: underline ;
+}
