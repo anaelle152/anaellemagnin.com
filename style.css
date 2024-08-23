@@ -105,3 +105,22 @@ p a {
     color: #000000;
     text-decoration: underline ;
 }
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
