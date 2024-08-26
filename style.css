@@ -155,3 +155,8 @@ p a {
         font-size: 1em; /* Ajuste la taille des liens de navigation pour les petits écrans */
     }
 }
+
+{
+   display: flex;
+    align-content: space-evenly;
+}
