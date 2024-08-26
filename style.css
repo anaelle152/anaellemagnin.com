@@ -160,3 +160,7 @@ p a {
    display: flex;
     align-content: space-evenly;
 }
+
+.textcenter {
+            text-align: center;
+        }
