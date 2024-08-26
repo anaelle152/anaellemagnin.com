@@ -18,7 +18,7 @@ header {
     flex-direction: column;
     width: 100%;
     height: 30%;
-    margin: 0em 10em 0em 0em;
+    margin: 0 10em 0 0;
 }
 
 header h1 {
@@ -32,17 +32,13 @@ nav {
 
 .textnone {
     text-decoration: none;
-
 }
 
 a {
-  color: #fff;
-  display: inline-block;
-  padding: 15px 20px;
-  text-decoration: none;color: #fff;
-  display: inline-block;
-  padding: 15px 20px;
-  text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -76,18 +72,27 @@ nav a:hover {
 }
 
 section {
-    background-color: #00000;
+    background-color: #ffffff;
     padding: 20px;
     margin: 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.textalign {
-    text-align: center;
+.photo-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* La photo et le texte sont alignés côte à côte */
 }
 
-section h2 {
-    margin-top: 0;
+.photo-text-container img {
+    max-width: 225px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.photo-text-container .text-section {
+    width: 60%;
 }
 
 footer {
@@ -99,28 +104,54 @@ footer {
     margin-top: 20px;
     position: relative;
     bottom: 0;
-    -moz-box-sizing: border-box; box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 p a {
     color: #000000;
-    text-decoration: underline ;
+    text-decoration: underline;
 }
-@media screen and (max-width: 600px) {
-    body {
-        font-size: 16px;
-        padding: 10px;
+
+/* --- NOUVELLE PARTIE POUR RESPONSIVE DESIGN --- */
+
+/* Sur les tablettes (écrans entre 768px et 1024px) */
+@media (max-width: 1024px) {
+    .photo-text-container {
+        flex-direction: column; /* La photo passe au-dessus du texte sur les tablettes */
     }
 
-    .container {
-        width: 100%;
-        padding: 10px;
+    .photo-text-container img {
+        margin-bottom: 20px;
+        width: 90%; /* L'image occupe 90% de l'écran sur tablette */
     }
 
-    img {
-        width: 100%;
+    .photo-text-container .text-section {
+        width: 90%; /* Le texte occupe également 90% de la largeur de l'écran sur tablette */
     }
 
-    .column {
-        width: 100%;
+    nav a {
+        padding: 10px 15px; /* Réduit les paddings pour les tablettes */
+        font-size: 1.1em; /* Ajuste la taille des liens de navigation */
+    }
+}
+
+/* Sur les petits écrans (téléphones et petits appareils) */
+@media (max-width: 768px) {
+    .photo-text-container {
+        flex-direction: column; /* La photo passe au-dessus du texte */
+    }
+
+    .photo-text-container img {
+        margin-bottom: 20px;
+        width: 100%; /* L'image occupe 100% de l'écran sur les petits appareils */
+    }
+
+    .photo-text-container .text-section {
+        width: 100%; /* Le texte occupe toute la largeur de l'écran */
+    }
+
+    nav a {
+        padding: 8px 10px; /* Réduit les paddings pour les petits appareils */
+        font-size: 1em; /* Ajuste la taille des liens de navigation pour les petits écrans */
     }
 }
