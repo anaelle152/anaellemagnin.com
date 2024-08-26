@@ -164,3 +164,6 @@ p a {
 .textcenter {
             text-align: center;
         }
+{
+ display: flex-wrap: nowrap;
+}
