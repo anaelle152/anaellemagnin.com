@@ -112,47 +112,44 @@ p a {
     text-decoration: underline;
 }
 
-/* --- NOUVELLE PARTIE POUR RESPONSIVE DESIGN --- */
 
-/* Sur les tablettes (écrans entre 768px et 1024px) */
 @media (max-width: 1024px) {
     .photo-text-container {
-        flex-direction: column; /* La photo passe au-dessus du texte sur les tablettes */
+        flex-direction: column;
     }
 
     .photo-text-container img {
         margin-bottom: 20px;
-        width: 90%; /* L'image occupe 90% de l'écran sur tablette */
+        width: 90%;
     }
 
     .photo-text-container .text-section {
-        width: 90%; /* Le texte occupe également 90% de la largeur de l'écran sur tablette */
+        width: 90%;
     }
 
     nav a {
-        padding: 10px 15px; /* Réduit les paddings pour les tablettes */
-        font-size: 1.1em; /* Ajuste la taille des liens de navigation */
+        padding: 10px 15px;
+        font-size: 1.1em;
     }
 }
 
-/* Sur les petits écrans (téléphones et petits appareils) */
 @media (max-width: 768px) {
     .photo-text-container {
-        flex-direction: column; /* La photo passe au-dessus du texte */
+        flex-direction: column;
     }
 
     .photo-text-container img {
         margin-bottom: 20px;
-        width: 100%; /* L'image occupe 100% de l'écran sur les petits appareils */
+        width: 100%;
     }
 
     .photo-text-container .text-section {
-        width: 100%; /* Le texte occupe toute la largeur de l'écran */
+        width: 100%;
     }
 
     nav a {
-        padding: 8px 10px; /* Réduit les paddings pour les petits appareils */
-        font-size: 1em; /* Ajuste la taille des liens de navigation pour les petits écrans */
+        padding: 8px 10px;
+        font-size: 1em;
     }
 }
 
@@ -187,6 +184,20 @@ p a {
             color: #333;
         }
         #result img {
-            vertical-align: middle; /* Aligne l'image avec le texte */
-            height: 50px; /* Taille de l'image */
+            vertical-align: middle;
+            height: 2em;
         }
+      }
+         .search-container {
+             width: 90%;
+             max-width: 500px; 
+             display: flex;
+             flex-direction: column;
+         }
+         input[type="text"] {
+             padding: 10px;
+             width: 100%;
+             font-size: 16px;
+             margin-bottom: 10px;
+             box-sizing: border-box;
+         }
