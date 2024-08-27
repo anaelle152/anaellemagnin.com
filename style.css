@@ -190,7 +190,7 @@ p a {
       }
          .search-container {
              width: 90%;
-             max-width: 500px; 
+             max-width: 500px;
              display: flex;
              flex-direction: column;
          }
@@ -201,3 +201,16 @@ p a {
              margin-bottom: 10px;
              box-sizing: border-box;
          }
+
+         img {
+    display: block; /* Évite l'espace blanc en bas des images */
+    margin: 0 auto; /* Centre les images horizontalement */
+}
+
+/* Styles spécifiques pour les écrans de téléphone */
+@media (max-width: 600px) {
+    img {
+        max-width: 100%; /* Les images ne dépassent jamais la largeur de leur conteneur */
+        height: auto; /* Maintient les proportions de l'image */
+    }
+}
