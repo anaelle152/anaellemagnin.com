@@ -45,6 +45,29 @@
                 <li>Analyse des stocks</li>
                 <li>Contrôle des stocks</li>
             </ul> -->
+            <section>
+              <p>Besoin d'aide pour trouver quelque chose ? Utilisez la barre de recherche !</p>
+
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Tapez quelque chose...">
+    <button onclick="showResult()">Rechercher</button>
+</div>
+
+<div id="result"></div>
+<script>
+    function showResult() {
+        // Peu importe ce que l'utilisateur tape, ceci sera affiché
+        document.getElementById("result").innerText = "Non, je rigole la recherche marche pas";
+      }
+
+      // Ajouter un événement pour détecter la touche "Entrée" dans l'input
+      document.getElementById("searchInput").addEventListener("keydown", function(event) {
+          if (event.key === "Enter") {  // Si la touche est "Entrée"
+              showResult();  // Appeler la fonction de recherche
+          }
+      });
+</script>
+            </section>
         </section>
     </div>
     <footer>
