@@ -186,3 +186,7 @@ p a {
             font-size: 18px;
             color: #333;
         }
+        #result img {
+            vertical-align: middle; /* Aligne l'image avec le texte */
+            height: 50px; /* Taille de l'image */
+        }
