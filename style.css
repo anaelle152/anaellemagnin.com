@@ -10,7 +10,7 @@ body {
 
 header {
     display: flex;
-    background-color: #415a77;
+    background-color: #8E88ED;
     color: #fff;
     padding: 20px 0;
     justify-content: center;
@@ -96,7 +96,7 @@ section {
 }
 
 footer {
-    background: linear-gradient(0.25turn, #e66465, #9198e5);
+    background: linear-gradient(0.25turn,  #8E88ED, #F645AA, #EC8572, #D574E2, #7A71F0);
     color: #fff;
     text-align: center;
     width: 100%;
