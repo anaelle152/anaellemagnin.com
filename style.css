@@ -10,7 +10,7 @@ body {
 
 header {
     display: flex;
-    background-color: #533691;
+    background-color: #271b42;
     color: #fff;
     padding: 20px 0;
     justify-content: center;
@@ -26,7 +26,7 @@ header h1 {
 }
 
 nav {
-  background: #8E88ED;
+  background: #4c487d;
     text-align: center;
 }
 
