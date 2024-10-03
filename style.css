@@ -82,13 +82,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* align-self: center; */
     flex-direction: row; /* La photo et le texte sont alignés côte à côte */
 }
 
 .photo-text-container img {
     max-width: 225px;
     height: auto;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .photo-text-container .text-section {
