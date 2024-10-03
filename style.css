@@ -24,9 +24,9 @@ header {
 header h1 {
     margin: 0;
 }
-/* 373459 // 4c487d */
+/* 373459 // 4c487d // 373459 */
 nav {
-  background: linear-gradient(180deg, #322f4f, #4c487d ); /* Dégradé vertical */
+  background: linear-gradient(180deg, #322f4f, #4c487d); /* Dégradé vertical */
   text-align: center;
 }
 
