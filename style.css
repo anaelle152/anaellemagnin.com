@@ -214,3 +214,18 @@ p a {
         height: auto; /* Maintient les proportions de l'image */
     }
 }
+ul {
+        list-style-type: none; /* Retirer les puces par défaut */
+    }
+
+    ul li {
+        position: relative; /* Pour positionner l'étoile */
+        padding-left: 20px; /* Laisser de l'espace pour l'étoile */
+    }
+
+    ul li::before {
+        content: "★"; /* Ajouter une étoile avant chaque élément de la liste */
+        position: absolute;
+        left: 0; /* Position de l'étoile */
+        color: black; /* Couleur de l'étoile */
+    }
