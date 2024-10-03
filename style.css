@@ -10,7 +10,7 @@ body {
 
 header {
     display: flex;
-    background-color: #271b42;
+    background-color: #373459;
     color: #fff;
     padding: 20px 0;
     justify-content: center;
@@ -24,10 +24,10 @@ header {
 header h1 {
     margin: 0;
 }
-
+/* 373459 // 4c487d */
 nav {
-  background: #4c487d;
-    text-align: center;
+  background: linear-gradient(180deg, #322f4f, #4c487d ); /* Dégradé vertical */
+  text-align: center;
 }
 
 .textnone {
@@ -215,17 +215,17 @@ p a {
     }
 }
 ul {
-        list-style-type: none; /* Retirer les puces par défaut */
+        list-style-type: none;
     }
 
     ul li {
-        position: relative; /* Pour positionner l'étoile */
-        padding-left: 20px; /* Laisser de l'espace pour l'étoile */
+        position: relative;
+        padding-left: 20px;
     }
 
     ul li::before {
-        content: "★"; /* Ajouter une étoile avant chaque élément de la liste */
+        content: "★";
         position: absolute;
-        left: 0; /* Position de l'étoile */
-        color: black; /* Couleur de l'étoile */
+        left: 0;
+        color: black;
     }
