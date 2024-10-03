@@ -230,3 +230,17 @@ ul {
         left: 0;
         color: black;
     }
+        .menu {
+            display: center;
+            gap: 10px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: white;
+        transition: background-color 1s;
+    }
+
+    .menu a:hover {
+        background-color: #372652;
+    }
