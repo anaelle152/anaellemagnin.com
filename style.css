@@ -95,9 +95,9 @@ section {
 .photo-text-container .text-section {
     width: 60%;
 }
-
+/* background: linear-gradient(0.25turn,  #8E88ED, #F645AA, #EC8572, #D574E2, #7A71F0); */
 footer {
-    background: linear-gradient(0.25turn,  #8E88ED, #F645AA, #EC8572, #D574E2, #7A71F0);
+    background: linear-gradient(0.25turn, #373459, #914ab5, #373459);
     color: #fff;
     text-align: center;
     width: 100%;
