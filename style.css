@@ -208,7 +208,7 @@ h2 {
 /* === BOÎTE PINTEREST === */
 
 .pinterest-box {
-  background-color: #4CAF50;
+  background-color: rgba(195, 80, 193, 0.30);
   color: white;
   text-align: center;
   padding: 20px;
