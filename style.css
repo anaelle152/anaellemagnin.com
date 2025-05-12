@@ -269,6 +269,10 @@ button:hover {
 /* === PIED DE PAGE === */
 
 footer {
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100000 */
   text-align: center;
   padding: 30px 20px;
   background-color: #1a1a1a;
@@ -383,5 +387,5 @@ footer {
 
   to {
     transform: translateX(var(--end));
-  }
+
 }
