@@ -443,6 +443,7 @@ footer {
   font-weight: 400;
   font-style: normal;
 }
+/*
 .ribbon {
   position: absolute;
   overflow: hidden;
@@ -485,3 +486,64 @@ footer {
   box-shadow: 140px -140px #cc3f47;
   background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
 }
+.ribbon::before {
+  /* déjà présent : */
+  /* ... */
+  /* transition: opacity 0.3s ease-in-out;
+}
+
+.ribbon:hover::before {
+  opacity: 0.5;
+} */
+
+
+
+
+    .ribbon {
+      position: absolute;
+      overflow: hidden;
+      width: 150px;
+      height: 150px;
+      top: -10px;
+      left: -10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 15;
+      pointer-events: auto; /* indispensable */
+    }
+
+    .ribbon::before {
+      content: 'may 2025';
+      position: absolute;
+      width: 150%;
+      height: 40px;
+      background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+      transform: rotate(-45deg) translateY(-20px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+      transition: opacity 0.3s ease-in-out;
+      z-index: 1;
+    }
+
+    .ribbon:hover::before {
+      opacity: 0.75;
+    }
+
+    .ribbon::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      bottom: 0;
+      left: 0;
+      height: 10px;
+      z-index: 0;
+      box-shadow: 140px -140px #cc3f47;
+      background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    }
