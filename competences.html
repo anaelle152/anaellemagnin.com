@@ -85,6 +85,81 @@
                 <a href="https://github.com/anaelle152" target="_blank">mon Github</a>
 
     </section>
+    <div class="button-container">
+      <button class="button-pub"># TURN ON ADS</button>
+    </div>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const button = document.querySelector('.button-pub');
+
+        const images = [
+          'https://i.pinimg.com/474x/9b/5c/79/9b5c790382c1cbd0e8cb8de1442d4bdf.jpg',
+          'https://i.pinimg.com/736x/13/ab/78/13ab78cf52f96093563fbdfe21b72e47.jpg',
+          'https://i.pinimg.com/736x/34/0b/dc/340bdc0ef840cfe28746b74e32c390e5.jpg',
+          'https://placebear.com/250/200',
+          'https://dummyimage.com/250x200/ff725a/ffffff&text=BUY+NOW'
+        ];
+
+        // Fonction pour mélanger un tableau
+        function shuffle(array) {
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+          return array;
+        }
+
+        button.addEventListener('click', () => {
+          const bodyHeight = document.body.scrollHeight;
+          const bodyWidth = document.body.scrollWidth;
+
+          const totalPopups = 20;
+          const guaranteedImages = shuffle([...images]); // on mélange une copie
+          const popupsImages = [...guaranteedImages];
+
+          // Compléter jusqu'à 20 avec des images aléatoires
+          while (popupsImages.length < totalPopups) {
+            const randomImg = images[Math.floor(Math.random() * images.length)];
+            popupsImages.push(randomImg);
+          }
+
+          // Mélanger l'ordre d'affichage
+          shuffle(popupsImages);
+
+          // Créer les popups
+          popupsImages.forEach(imgSrc => {
+            const popup = document.createElement('div');
+            popup.classList.add('popup');
+
+            const width = Math.floor(Math.random() * 130) + 120;
+            const height = Math.floor(Math.random() * 130) + 120;
+            popup.style.width = `${width}px`;
+            popup.style.height = `${height}px`;
+
+            const maxX = bodyWidth - width;
+            const maxY = bodyHeight - height;
+            popup.style.left = `${Math.random() * maxX}px`;
+            popup.style.top = `${Math.random() * maxY}px`;
+
+            const closeBtn = document.createElement('button');
+            closeBtn.innerText = '✖';
+            closeBtn.classList.add('close-btn');
+            closeBtn.onclick = () => popup.remove();
+
+            const img = document.createElement('img');
+            img.src = imgSrc;
+            img.alt = "pub";
+
+            popup.appendChild(closeBtn);
+            popup.appendChild(img);
+            document.body.appendChild(popup);
+          });
+        });
+      });
+    </script>
+
+
     <!-- <div class="bebas-neue-regular">
     <div class="marquee-container">
         <div class="marquee-text"> <p>Et c’est une bonne situation ça scribe ? VOUS SAVEZ, MOI JE NE CROIS PAS QU’IL Y AIT DE BONNE OU DE MAUVAISE SITUATION. MOI, SI JE DEVAIS RÉSUMER MA VIE AUJOURD’HUI AVEC VOUS, JE DIRAIS QUE C’EST D’ABORD DES RENCONTRES. DES GENS QUI M’ONT TENDU LA MAIN, PEUT-ÊTRE À UN MOMENT OÙ JE NE POUVAIS PAS, OÙ J’ÉTAIS SEUL CHEZ MOI. ET C’EST ASSEZ CURIEUX DE SE DIRE QUE LES HASARDS, LES RENCONTRES FORGENT UNE DESTINÉE... PARCE QUE QUAND ON A LE GOÛT DE LA CHOSE, QUAND ON A LE GOÛT DE LA CHOSE BIEN FAITE, LE BEAU GESTE, PARFOIS ON NE TROUVE PAS L’INTERLOCUTEUR EN FACE JE DIRAIS, LE MIROIR QUI VOUS AIDE À AVANCER. ALORS ÇA N’EST PAS MON CAS, COMME JE DISAIS LÀ, PUISQUE MOI AU CONTRAIRE, J’AI PU ; ET JE DIS MERCI À LA VIE, JE LUI DIS MERCI, JE CHANTE LA VIE, JE DANSE LA VIE... JE NE SUIS QU’AMOUR ! ET FINALEMENT, QUAND DES GENS ME DISENT « MAIS COMMENT FAIS-TU POUR AVOIR CETTE HUMANITÉ ? », JE LEUR RÉPONDS TRÈS SIMPLEMENT QUE C’EST CE GOÛT DE L’AMOUR, CE GOÛT DONC QUI M’A POUSSÉ AUJOURD’HUI À ENTREPRENDRE UNE CONSTRUCTION MÉCANIQUE... MAIS DEMAIN QUI SAIT ? PEUT-ÊTRE SIMPLEMENT À ME METTRE AU SERVICE DE LA COMMUNAUTÉ, À FAIRE LE DON, LE DON DE SOI.
